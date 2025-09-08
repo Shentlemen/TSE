@@ -1,35 +1,32 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:24-jdk
 
 RUN apt-get update && apt-get install -y maven wget && rm -rf /var/lib/apt/lists/*
 
+ENV JAVA_HOME=/usr/local/openjdk-24
+ENV PATH="$JAVA_HOME/bin:$PATH"
+
 WORKDIR /app
 
-# Copiar archivos de configuración
 COPY pom.xml .
 
-# Descargar dependencias
 RUN mvn dependency:go-offline
 
-# Copiar código fuente
 COPY src ./src
 
-# Compilar la aplicación
 RUN mvn clean package -DskipTests
 
-# Instalar WildFly
+RUN java -version
+
 RUN mkdir -p /opt/wildfly
-# Usar la URL correcta de WildFly
+
 RUN wget https://github.com/wildfly/wildfly/releases/download/37.0.1.Final/wildfly-37.0.1.Final.tar.gz && \
     tar -xzf wildfly-37.0.1.Final.tar.gz -C /opt/ && \
     mv /opt/wildfly-37.0.1.Final/* /opt/wildfly/ && \
     rm wildfly-37.0.1.Final.tar.gz
 
-# Mover el WAR generado a WildFly
 RUN cp target/tse-wildfly-app.war /opt/wildfly/standalone/deployments/
 
-# Exponer puerto dinámico
 EXPOSE 8080
 ENV PORT=8080
 
-# Configurar WildFly para usar el puerto dinámico
 CMD ["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-Djboss.http.port=${PORT}"]
