@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tse-wildfly-app
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /tse-wildfly-app/practico1/usuarios?action=list
+    envVars:
+      - key: JAVA_OPTS
+        value: -Xmx512m -Xms256m
+
+

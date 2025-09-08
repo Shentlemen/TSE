@@ -1,0 +1,8 @@
+com\practico1\app\web\UsuarioServlet.class
+com\practico1\app\entity\UsuarioServiciosSalud.class
+com\practico1\app\business\UsuarioBusinessRemote.class
+com\practico1\app\business\UsuarioBusinessBean.class
+com\practico1\app\business\UsuarioBusinessLocal.class
+com\practico1\app\data\UsuarioDataBean.class
+com\practico1\app\data\UsuarioDataRemote.class
+com\practico1\app\data\UsuarioDataLocal.class
