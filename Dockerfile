@@ -27,6 +27,9 @@ RUN wget https://github.com/wildfly/wildfly/releases/download/37.0.1.Final/wildf
 # Mover el WAR generado a WildFly
 RUN cp target/tse-wildfly-app.war /opt/wildfly/standalone/deployments/
 
+# Exponer puerto dinámico
 EXPOSE 8080
+ENV PORT=8080
 
-CMD ["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]
+# Configurar WildFly para usar el puerto dinámico
+CMD ["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-Djboss.http.port=${PORT}"]
