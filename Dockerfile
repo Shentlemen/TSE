@@ -18,7 +18,8 @@ RUN mvn clean package -DskipTests
 
 # Instalar WildFly
 RUN mkdir -p /opt/wildfly
-RUN wget https://download.jboss.org/wildfly/37.0.1.Final/wildfly-37.0.1.Final.tar.gz && \
+# Usar la URL correcta de WildFly
+RUN wget https://github.com/wildfly/wildfly/releases/download/37.0.1.Final/wildfly-37.0.1.Final.tar.gz && \
     tar -xzf wildfly-37.0.1.Final.tar.gz -C /opt/ && \
     mv /opt/wildfly-37.0.1.Final/* /opt/wildfly/ && \
     rm wildfly-37.0.1.Final.tar.gz
