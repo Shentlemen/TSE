@@ -2455,3 +2455,5 @@ Caused by: java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" 
 2025-09-08 15:40:14,181 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 115) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
 2025-09-08 15:40:14,195 INFO  [org.jboss.as.server] (management-handler-thread - 4) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
 2025-09-08 15:40:14,196 INFO  [org.jboss.as.repository] (management-handler-thread - 4) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\e4\be9037d208d000b7e0b9d44cf418d05e49e6c9\content
+2025-09-08 17:16:03,655 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 82) WFLYDR0009: Content C:\TSE\wildfly-37.0.1.Final\standalone\data\content\13\48d5ccbaf4b0533424f4d242d7e0e10697f4ce is obsolete and will be removed
+2025-09-08 17:16:03,662 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 82) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\13\48d5ccbaf4b0533424f4d242d7e0e10697f4ce\content
