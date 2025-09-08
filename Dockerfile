@@ -19,7 +19,7 @@ RUN wget https://download.jboss.org/wildfly/37.0.1.Final/wildfly-37.0.1.Final.ta
     mv /opt/wildfly-37.0.1.Final/* /opt/wildfly/ && \
     rm wildfly-37.0.1.Final.tar.gz
 
-# Copiar el WAR que se generó en el paso anterior
+# Ahora sí copiar el WAR que se generó
 COPY target/tse-wildfly-app.war /opt/wildfly/standalone/deployments/
 
 EXPOSE 8080
