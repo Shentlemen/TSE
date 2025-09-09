@@ -2457,3 +2457,18 @@ Caused by: java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" 
 2025-09-08 15:40:14,196 INFO  [org.jboss.as.repository] (management-handler-thread - 4) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\e4\be9037d208d000b7e0b9d44cf418d05e49e6c9\content
 2025-09-08 17:16:03,655 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 82) WFLYDR0009: Content C:\TSE\wildfly-37.0.1.Final\standalone\data\content\13\48d5ccbaf4b0533424f4d242d7e0e10697f4ce is obsolete and will be removed
 2025-09-08 17:16:03,662 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 82) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\13\48d5ccbaf4b0533424f4d242d7e0e10697f4ce\content
+2025-09-08 19:24:41,303 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2025-09-08 19:24:41,326 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-09-08 19:24:41,334 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2025-09-08 19:24:41,345 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 115) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-08 19:24:41,355 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-9) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-09-08 19:24:41,358 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) WFLYUT0019: Host default-host stopping
+2025-09-08 19:24:41,365 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-09-08 19:24:41,368 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-9) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-09-08 19:24:41,379 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-09-08 19:24:41,379 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2025-09-08 19:24:41,380 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2025-09-08 19:24:41,380 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2025-09-08 19:24:41,383 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.3.18.Final stopping
+2025-09-08 19:24:41,393 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 44ms
+2025-09-08 19:24:41,402 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) stopped in 57ms
