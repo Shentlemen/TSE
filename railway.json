@@ -4,7 +4,7 @@
       "dockerfilePath": "Dockerfile"
     },
     "deploy": {
-      "startCommand": "/opt/wildfly/bin/standalone.sh -b 0.0.0.0",
+      "startCommand": "/opt/wildfly/bin/standalone.sh -b 0.0.0.0 -Djboss.http.port=$PORT",
       "healthcheckPath": "/tse-wildfly-app/practico1/usuarios?action=list",
       "healthcheckTimeout": 300,
       "restartPolicyType": "ON_FAILURE",
