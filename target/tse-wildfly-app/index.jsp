@@ -19,9 +19,9 @@
         <p>Practico 1 - Jakarta EE con Session Beans</p>
         
         <div class="menu">
-            <a href="usuarios?action=form">Agregar Usuario</a>
-            <a href="usuarios?action=list">Listar Usuarios</a>
-            <a href="usuarios?action=search">Buscar Usuarios</a>
+            <a href="practico1/usuarios?action=form">Agregar Usuario</a>
+            <a href="practico1/usuarios?action=list">Listar Usuarios</a>
+            <a href="practico1/usuarios?action=search">Buscar Usuarios</a>
         </div>
         
         <p>Seleccione una opción del menú para comenzar.</p>
