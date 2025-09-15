@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
+<!-- 
+    Página principal JSF para gestión de usuarios
+    Utiliza componentes JSF con AJAX para interacciones dinámicas
+-->
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
@@ -294,29 +298,31 @@
 
 <h:body>
     <div class="container">
-        <!-- Header -->
+        <!-- Header de la aplicación -->
         <div class="header">
             <h1>🏥 Gestión de Usuarios de Servicios de Salud</h1>
             <p>Ejercicio 4 del Práctico 1 - Java Server Faces (JSF) con AJAX</p>
         </div>
 
-        <!-- Estadísticas -->
+        <!-- Contador de usuarios - se actualiza dinámicamente con AJAX -->
         <div class="stats-card" id="stats-card">
             <h:outputText value="#{usuarioBean.usuarios.size()}" styleClass="stats-number" id="stats-number"/>
             <span class="stats-label">Usuarios Registrados</span>
         </div>
 
-        <!-- Sección de Búsqueda -->
+        <!-- Formulario de búsqueda con AJAX -->
         <div class="search-section">
             <h3>Filtrar Usuarios</h3>
             <h:form id="searchForm">
                 <div class="search-controls">
+                    <!-- Campo de búsqueda conectado al bean -->
                     <h:inputText id="nombreBusqueda" 
                                 value="#{usuarioBean.nombreBusqueda}" 
                                 styleClass="search-input"
                                 placeholder="Escriba el nombre del usuario..."
                                 onkeypress="if(event.key==='Enter') { document.getElementById('searchForm:searchButton').click(); return false; }"/>
                     
+                    <!-- Botón de filtrado con AJAX -->
                     <h:commandButton id="searchButton"
                                     value="Filtrar" 
                                     action="#{usuarioBean.buscarUsuarios}" 
@@ -324,12 +330,14 @@
                         <f:ajax render="usuariosTable messages" execute="@form"/>
                     </h:commandButton>
                     
+                    <!-- Botón para limpiar filtros -->
                     <h:commandButton value="Limpiar Filtros" 
                                     action="#{usuarioBean.mostrarTodos}" 
                                     styleClass="btn btn-primary">
                         <f:ajax render="usuariosTable messages" execute="@form"/>
                     </h:commandButton>
                     
+                    <!-- Botón para abrir modal de agregar usuario -->
                     <h:commandButton value="Agregar Usuario" 
                                     action="#{usuarioBean.inicializarNuevoUsuario}" 
                                     styleClass="btn btn-success">
@@ -339,7 +347,7 @@
             </h:form>
         </div>
 
-        <!-- Tabla de Usuarios -->
+        <!-- Tabla dinámica de usuarios - se actualiza con AJAX -->
         <h:dataTable value="#{usuarioBean.usuariosFiltrados}" var="usuario" 
                     id="usuariosTable">
             
@@ -380,20 +388,21 @@
             </h:column>
         </h:dataTable>
 
-        <!-- OmniFaces Messages -->
+        <!-- Área de mensajes del sistema (éxito, error, etc.) -->
         <o:messages id="messages" 
                    showDetail="true" 
                    life="5000"
                    style="margin-top: 20px;"/>
     </div>
 
-    <!-- Modal para Agregar Usuario -->
+    <!-- Modal popup para agregar nuevos usuarios -->
     <div id="addUserModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <h2>➕ Agregar Nuevo Usuario</h2>
                 <span class="close" onclick="closeModal()">×</span>
             </div>
+            <!-- Formulario JSF para agregar usuario -->
             <h:form id="addUserForm">
                 <div class="modal-body">
                     <div class="form-group">
@@ -460,12 +469,14 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <!-- Botón JSF que guarda el usuario con AJAX -->
                     <h:commandButton value="💾 Guardar" 
                                     action="#{usuarioBean.agregarUsuario}" 
                                     styleClass="btn btn-success">
                         <f:ajax render="usuariosTable messages stats-number" execute="@form" 
                                 onevent="handleSave"/>
                     </h:commandButton>
+                    <!-- Botón HTML para cerrar modal -->
                     <button type="button" class="btn btn-danger" onclick="closeModal()">
                         ❌ Cancelar
                     </button>
@@ -474,6 +485,7 @@
         </div>
     </div>
 
+    <!-- JavaScript para manejo del modal y AJAX -->
     <script>
         //<![CDATA[
         function openModal() {

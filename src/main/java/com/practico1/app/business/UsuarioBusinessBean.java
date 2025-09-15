@@ -5,11 +5,15 @@ import com.practico1.app.entity.UsuarioServiciosSalud;
 import jakarta.ejb.EJB;
 import jakarta.ejb.Stateless;
 import jakarta.ejb.Local;
-import jakarta.ejb.Remote;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.regex.Pattern;
 
+/**
+ * Bean de lógica de negocio para gestión de usuarios.
+ * Stateless EJB que implementa validaciones y reglas de negocio.
+ * Delega el acceso a datos al UsuarioDataBean.
+ */
 @Stateless
 @Local(UsuarioBusinessLocal.class)
 public class UsuarioBusinessBean implements UsuarioBusinessLocal {

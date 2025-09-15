@@ -8,8 +8,12 @@ import java.util.concurrent.ConcurrentMap;
 import jakarta.ejb.Singleton;
 import jakarta.ejb.Startup;
 import jakarta.ejb.Local;
-import jakarta.ejb.Remote;
 
+/**
+ * Bean de datos para gestión de usuarios.
+ * Singleton que mantiene los datos en memoria usando ConcurrentHashMap.
+ * Implementa la interfaz local para acceso desde la capa de negocio.
+ */
 @Singleton(name = "UsuarioDataBean")
 @Startup
 @Local(UsuarioDataLocal.class)

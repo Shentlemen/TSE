@@ -3,6 +3,10 @@ package com.practico1.app.entity;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/**
+ * Entidad que representa un usuario de servicios de salud.
+ * POJO (Plain Old Java Object) con getters, setters y constructores.
+ */
 public class UsuarioServiciosSalud {
     private String cedula;
     private String nombre;

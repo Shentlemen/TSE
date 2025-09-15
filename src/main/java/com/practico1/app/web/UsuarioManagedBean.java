@@ -18,6 +18,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Managed Bean para la gestión de usuarios en la capa de presentación.
+ * Maneja la interacción entre JSF y la lógica de negocio.
+ */
 @Named("usuarioBean")
 @ViewScoped
 public class UsuarioManagedBean implements Serializable {
@@ -27,7 +31,7 @@ public class UsuarioManagedBean implements Serializable {
     @EJB
     private UsuarioBusinessLocal usuarioBusiness;
 
-    // Propiedades para el formulario
+    // Propiedades del formulario
     private UsuarioServiciosSalud nuevoUsuario;
     private String cedula;
     private String nombre;
@@ -52,6 +56,9 @@ public class UsuarioManagedBean implements Serializable {
         cargarUsuarios();
     }
 
+    /**
+     * Carga todos los usuarios desde la capa de negocio
+     */
     public void cargarUsuarios() {
         usuarios = usuarioBusiness.obtenerUsuarios();
         if (usuarios == null) {
@@ -60,31 +67,31 @@ public class UsuarioManagedBean implements Serializable {
         usuariosFiltrados = new ArrayList<>(usuarios);
     }
 
+    /**
+     * Agrega un nuevo usuario al sistema.
+     * Valida datos básicos y delega validaciones avanzadas a la capa de negocio.
+     */
     public void agregarUsuario() {
         try {
-            // Validar cédula
+            // Validación básica
             if (cedula == null || cedula.trim().isEmpty()) {
                 FacesContext.getCurrentInstance().addMessage(null, 
                     new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", "La cédula es obligatoria"));
                 return;
             }
             
-            // Crear el usuario con las propiedades individuales
+            // Crear usuario y delegar a la capa de negocio
             UsuarioServiciosSalud usuario = new UsuarioServiciosSalud(
                 cedula, nombre, apellido, fechaNacimiento, email, telefono
             );
             usuario.setActivo(activo);
             
             usuarioBusiness.agregarUsuario(usuario);
-            
-            // Recargar lista
             cargarUsuarios();
             
-            // Mostrar mensaje de éxito
             FacesContext.getCurrentInstance().addMessage(null, 
                 new FacesMessage(FacesMessage.SEVERITY_INFO, "Éxito", "Usuario agregado correctamente"));
             
-            // Limpiar formulario después del éxito
             limpiarFormulario();
                 
         } catch (IllegalArgumentException e) {
@@ -96,6 +103,9 @@ public class UsuarioManagedBean implements Serializable {
         }
     }
 
+    /**
+     * Filtra usuarios por nombre. Si no hay término de búsqueda, muestra todos.
+     */
     public void buscarUsuarios() {
         if (nombreBusqueda != null && !nombreBusqueda.trim().isEmpty()) {
             usuariosFiltrados = usuarioBusiness.buscarPorNombre(nombreBusqueda);
@@ -104,6 +114,9 @@ public class UsuarioManagedBean implements Serializable {
         }
     }
 
+    /**
+     * Limpia el filtro y muestra todos los usuarios
+     */
     public void mostrarTodos() {
         nombreBusqueda = null;
         usuariosFiltrados = new ArrayList<>(usuarios);
@@ -111,11 +124,6 @@ public class UsuarioManagedBean implements Serializable {
 
     public void inicializarNuevoUsuario() {
         nuevoUsuario = new UsuarioServiciosSalud();
-    }
-
-    public void limpiarBusqueda() {
-        nombreBusqueda = null;
-        usuariosFiltrados = new ArrayList<>(usuarios);
     }
 
     private void limpiarFormulario() {
@@ -220,6 +228,9 @@ public class UsuarioManagedBean implements Serializable {
     }
 
 
+    /**
+     * Convertidor JSF para manejar fechas LocalDate en formularios HTML
+     */
     @FacesConverter(forClass = LocalDate.class)
     public static class LocalDateConverter implements Converter<LocalDate> {
         private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
