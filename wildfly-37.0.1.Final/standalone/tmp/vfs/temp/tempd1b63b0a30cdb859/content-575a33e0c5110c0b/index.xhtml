@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:o="http://omnifaces.org/ui">
+
+<h:head>
+    <title>Gestión de Usuarios - Ejercicio 4 del Práctico 1</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .header h1 {
+            font-size: 2em;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+        }
+        
+        .header p {
+            font-size: 1em;
+            margin: 0;
+            color: #666;
+        }
+        
+        .stats-card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+        
+        .stats-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+        
+        .stats-label {
+            font-size: 0.9em;
+            margin: 0;
+            color: #666;
+        }
+        
+        .search-section {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .search-section h3 {
+            margin: 0 0 15px 0;
+            color: #333;
+            font-size: 1.1em;
+            font-weight: normal;
+        }
+        
+        .search-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .search-input {
+            flex: 1;
+            max-width: 300px;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            background: white;
+            cursor: pointer;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            background: #f5f5f5;
+        }
+        
+        .btn-primary {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+        
+        .btn-success {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+        
+        .btn-success:hover {
+            background: #1e7e34;
+        }
+        
+        .btn-warning {
+            background: #ffc107;
+            color: #212529;
+            border-color: #ffc107;
+        }
+        
+        .btn-warning:hover {
+            background: #e0a800;
+        }
+        
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+        
+        .btn-danger:hover {
+            background: #c82333;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .text-success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .text-danger {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 0;
+            border: 1px solid #ddd;
+            width: 90%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        .modal-header {
+            background: #f8f9fa;
+            color: #333;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-header h2 {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: normal;
+        }
+        
+        .close {
+            color: #666;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: #000;
+        }
+        
+        .modal-body {
+            padding: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        
+        .modal-footer {
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #ddd;
+            text-align: right;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            margin: 0;
+        }
+        
+        .checkbox-group label {
+            margin: 0;
+            font-weight: normal;
+        }
+    </style>
+</h:head>
+
+<h:body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🏥 Gestión de Usuarios de Servicios de Salud</h1>
+            <p>Ejercicio 4 del Práctico 1 - Java Server Faces (JSF) con AJAX</p>
+        </div>
+
+        <!-- Estadísticas -->
+        <div class="stats-card" id="stats-card">
+            <h:outputText value="#{usuarioBean.usuarios.size()}" styleClass="stats-number" id="stats-number"/>
+            <span class="stats-label">Usuarios Registrados</span>
+        </div>
+
+        <!-- Sección de Búsqueda -->
+        <div class="search-section">
+            <h3>Filtrar Usuarios</h3>
+            <h:form id="searchForm">
+                <div class="search-controls">
+                    <h:inputText id="nombreBusqueda" 
+                                value="#{usuarioBean.nombreBusqueda}" 
+                                styleClass="search-input"
+                                placeholder="Escriba el nombre del usuario..."
+                                onkeypress="if(event.key==='Enter') { document.getElementById('searchForm:searchButton').click(); return false; }"/>
+                    
+                    <h:commandButton id="searchButton"
+                                    value="Filtrar" 
+                                    action="#{usuarioBean.buscarUsuarios}" 
+                                    styleClass="btn btn-warning">
+                        <f:ajax render="usuariosTable messages" execute="@form"/>
+                    </h:commandButton>
+                    
+                    <h:commandButton value="Limpiar Filtros" 
+                                    action="#{usuarioBean.mostrarTodos}" 
+                                    styleClass="btn btn-primary">
+                        <f:ajax render="usuariosTable messages" execute="@form"/>
+                    </h:commandButton>
+                    
+                    <h:commandButton value="Agregar Usuario" 
+                                    action="#{usuarioBean.inicializarNuevoUsuario}" 
+                                    styleClass="btn btn-success">
+                        <f:ajax render="@none" execute="@this" onevent="openModal()"/>
+                    </h:commandButton>
+                </div>
+            </h:form>
+        </div>
+
+        <!-- Tabla de Usuarios -->
+        <h:dataTable value="#{usuarioBean.usuariosFiltrados}" var="usuario" 
+                    id="usuariosTable">
+            
+            <h:column>
+                <f:facet name="header">Cédula</f:facet>
+                <strong>#{usuario.cedula}</strong>
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">Nombre</f:facet>
+                #{usuario.nombre}
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">Apellido</f:facet>
+                #{usuario.apellido}
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">Email</f:facet>
+                #{usuario.email}
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">Teléfono</f:facet>
+                #{usuario.telefono}
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">Fecha Nacimiento</f:facet>
+                #{usuario.fechaNacimiento}
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">Estado</f:facet>
+                <h:outputText value="#{usuario.activo ? 'Activo' : 'Inactivo'}" 
+                             styleClass="#{usuario.activo ? 'text-success' : 'text-danger'}"/>
+            </h:column>
+        </h:dataTable>
+
+        <!-- OmniFaces Messages -->
+        <o:messages id="messages" 
+                   showDetail="true" 
+                   life="5000"
+                   style="margin-top: 20px;"/>
+    </div>
+
+    <!-- Modal para Agregar Usuario -->
+    <div id="addUserModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>➕ Agregar Nuevo Usuario</h2>
+                <span class="close" onclick="closeModal()">×</span>
+            </div>
+            <h:form id="addUserForm">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <h:outputLabel for="cedula" value="Cédula:" />
+                        <h:inputText id="cedula" 
+                                    value="#{usuarioBean.cedula}" 
+                                    styleClass="form-control"
+                                    required="true"
+                                    requiredMessage="La cédula es obligatoria"/>
+                        <h:message for="cedula" style="color: red;"/>
+                    </div>
+
+                    <div class="form-group">
+                        <h:outputLabel for="nombre" value="Nombre:" />
+                        <h:inputText id="nombre" 
+                                    value="#{usuarioBean.nombre}" 
+                                    styleClass="form-control"
+                                    required="true"
+                                    requiredMessage="El nombre es obligatorio"/>
+                        <h:message for="nombre" style="color: red;"/>
+                    </div>
+
+                    <div class="form-group">
+                        <h:outputLabel for="apellido" value="Apellido:" />
+                        <h:inputText id="apellido" 
+                                    value="#{usuarioBean.apellido}" 
+                                    styleClass="form-control"
+                                    required="true"
+                                    requiredMessage="El apellido es obligatorio"/>
+                        <h:message for="apellido" style="color: red;"/>
+                    </div>
+
+                    <div class="form-group">
+                        <h:outputLabel for="email" value="Email:" />
+                        <h:inputText id="email" 
+                                    value="#{usuarioBean.email}" 
+                                    styleClass="form-control"
+                                    required="true"
+                                    requiredMessage="El email es obligatorio"/>
+                        <h:message for="email" style="color: red;"/>
+                    </div>
+
+                    <div class="form-group">
+                        <h:outputLabel for="telefono" value="Teléfono:" />
+                        <h:inputText id="telefono" 
+                                    value="#{usuarioBean.telefono}" 
+                                    styleClass="form-control"/>
+                    </div>
+
+                    <div class="form-group">
+                        <h:outputLabel for="fechaNacimiento" value="Fecha de Nacimiento:" />
+                        <h:inputText id="fechaNacimiento" 
+                                    value="#{usuarioBean.fechaNacimiento}" 
+                                    styleClass="form-control"
+                                    type="date"/>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <h:selectBooleanCheckbox id="activo" 
+                                                   value="#{usuarioBean.activo}"/>
+                            <h:outputLabel for="activo" value="Usuario activo"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <h:commandButton value="💾 Guardar" 
+                                    action="#{usuarioBean.agregarUsuario}" 
+                                    styleClass="btn btn-success">
+                        <f:ajax render="usuariosTable messages stats-number" execute="@form" 
+                                onevent="handleSave"/>
+                    </h:commandButton>
+                    <button type="button" class="btn btn-danger" onclick="closeModal()">
+                        ❌ Cancelar
+                    </button>
+                </div>
+            </h:form>
+        </div>
+    </div>
+
+    <script>
+        //<![CDATA[
+        function openModal() {
+            document.getElementById('addUserModal').style.display = 'block';
+        }
+        
+        function closeModal() {
+            document.getElementById('addUserModal').style.display = 'none';
+            // Limpiar el formulario al cerrar
+            document.getElementById('addUserForm').reset();
+        }
+        
+        function handleSave(data) {
+            console.log('handleSave called with data:', data);
+            
+            if (data.status === 'complete') {
+                // Cuando la operación AJAX se completa, verificar si hay errores
+                var messages = document.querySelectorAll('.ui-messages .ui-message');
+                var hasErrors = false;
+                for (var i = 0; i < messages.length; i++) {
+                    if (messages[i].classList.contains('ui-message-error')) {
+                        hasErrors = true;
+                        break;
+                    }
+                }
+                
+                if (!hasErrors) {
+                    // Si no hay errores, cerrar el modal
+                    console.log('Cerrando modal - operación exitosa');
+                    setTimeout(function() {
+                        closeModal();
+                    }, 1500); // Delay para que se vea el mensaje de éxito
+                } else {
+                    console.log('Manteniendo modal abierto - hay errores');
+                }
+            }
+        }
+        
+        // Cerrar modal al hacer clic fuera de él
+        window.onclick = function(event) {
+            var modal = document.getElementById('addUserModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+        //]]>
+    </script>
+</h:body>
+</html>

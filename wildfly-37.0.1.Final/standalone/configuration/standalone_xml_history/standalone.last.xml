@@ -527,7 +527,7 @@
     </socket-binding-group>
     <deployments>
         <deployment name="tse-wildfly-app.war" runtime-name="tse-wildfly-app.war">
-            <content sha1="17466751fb494873e0c3940821b88bb0fe215122"/>
+            <content sha1="57014e7d8933d6d7439aee7042b94d39cc62dffe"/>
         </deployment>
     </deployments>
 </server>

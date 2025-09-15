@@ -1,5 +1,6 @@
-com\practico1\app\web\UsuarioServlet.class
+com\practico1\app\web\UsuarioManagedBean.class
 com\practico1\app\entity\UsuarioServiciosSalud.class
+com\practico1\app\web\UsuarioManagedBean$LocalDateConverter.class
 com\practico1\app\business\UsuarioBusinessRemote.class
 com\practico1\app\business\UsuarioBusinessBean.class
 com\practico1\app\business\UsuarioBusinessLocal.class

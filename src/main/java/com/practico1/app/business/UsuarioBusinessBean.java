@@ -4,11 +4,14 @@ import com.practico1.app.data.UsuarioDataLocal;
 import com.practico1.app.entity.UsuarioServiciosSalud;
 import jakarta.ejb.EJB;
 import jakarta.ejb.Stateless;
+import jakarta.ejb.Local;
+import jakarta.ejb.Remote;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.regex.Pattern;
 
-@Stateless  // Solo @Stateless, sin @LocalBean
+@Stateless
+@Local(UsuarioBusinessLocal.class)
 public class UsuarioBusinessBean implements UsuarioBusinessLocal {
     
     @EJB
@@ -46,9 +49,7 @@ public class UsuarioBusinessBean implements UsuarioBusinessLocal {
         if (cedula == null || cedula.trim().isEmpty()) {
             throw new IllegalArgumentException("La cédula no puede estar vacía");
         }
-        if (cedula.length() < 7 || cedula.length() > 8) {
-            throw new IllegalArgumentException("La cédula debe tener entre 7 y 8 dígitos");
-        }
+        // Validación de longitud eliminada - ahora acepta cualquier longitud
         if (!cedula.matches("\\d+")) {
             throw new IllegalArgumentException("La cédula debe contener solo números");
         }

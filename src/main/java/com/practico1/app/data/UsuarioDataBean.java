@@ -7,9 +7,12 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import jakarta.ejb.Singleton;
 import jakarta.ejb.Startup;
+import jakarta.ejb.Local;
+import jakarta.ejb.Remote;
 
 @Singleton(name = "UsuarioDataBean")
 @Startup
+@Local(UsuarioDataLocal.class)
 public class UsuarioDataBean implements UsuarioDataLocal {
     
     private final ConcurrentMap<String, UsuarioServiciosSalud> usuarios = new ConcurrentHashMap<>();

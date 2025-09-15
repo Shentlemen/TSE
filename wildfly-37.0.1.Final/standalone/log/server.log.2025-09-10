@@ -1,0 +1,1352 @@
+2025-09-10 10:56:20,034 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.6.Final
+2025-09-10 10:56:25,717 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.6.Final
+2025-09-10 10:56:25,740 INFO  [org.jboss.threads] (main) JBoss Threads version 3.9.1
+2025-09-10 10:56:26,088 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0049: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) starting
+2025-09-10 10:56:26,091 DEBUG [org.jboss.as.config] (MSC service thread 1-4) Configured system properties:
+	file.encoding = UTF-8
+	file.separator = \
+	java.awt.headless = true
+	java.class.path = C:\TSE\wildfly-37.0.1.Final\jboss-modules.jar
+	java.class.version = 68.0
+	java.home = C:\Program Files\Java\jdk-24
+	java.io.tmpdir = C:\Users\arrib\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-22\\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;c:\Users\arrib\AppData\Local\Programs\cursor\resources\app\bin;C:\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk-24\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\arrib\AppData\Local\Microsoft\WindowsApps;C:\Users\arrib\AppData\Roaming\npm;C:\Users\arrib\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\arrib\AppData\Local\GitHubDesktop\bin;C:\Users\arrib\AppData\Local\Programs\cursor\resources\app\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 24.0.2+12-54
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 24
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 24.0.2
+	java.version.date = 2025-07-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 24
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 24.0.2+12-54
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\TSE\wildfly-37.0.1.Final
+	jboss.host.name = vander
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = vander
+	jboss.qualified.host.name = vander
+	jboss.server.base.dir = C:\TSE\wildfly-37.0.1.Final\standalone
+	jboss.server.config.dir = C:\TSE\wildfly-37.0.1.Final\standalone\configuration
+	jboss.server.data.dir = C:\TSE\wildfly-37.0.1.Final\standalone\data
+	jboss.server.log.dir = C:\TSE\wildfly-37.0.1.Final\standalone\log
+	jboss.server.name = vander
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\TSE\wildfly-37.0.1.Final\standalone\tmp
+	jboss.threads.eqe.statistics = true
+	jdk.debug = release
+	jdk.serialFilter = maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000
+	line.separator = 
+
+	logging.configuration = file:C:\TSE\wildfly-37.0.1.Final\standalone\configuration/logging.properties
+	module.path = C:\TSE\wildfly-37.0.1.Final\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\TSE\wildfly-37.0.1.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	stderr.encoding = cp437
+	stdout.encoding = cp437
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-24\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\TSE\wildfly-37.0.1.Final\jboss-modules.jar -mp C:\TSE\wildfly-37.0.1.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\TSE\wildfly-37.0.1.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.dir = C:\TSE
+	user.home = C:\Users\arrib
+	user.language = en
+	user.name = arrib
+	user.script = 
+	user.timezone = America/Montevideo
+	user.variant = 
+2025-09-10 10:56:26,092 DEBUG [org.jboss.as.config] (MSC service thread 1-4) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Djdk.serialFilter=maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000 --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=C:\TSE\wildfly-37.0.1.Final\standalone\log\server.log -Dlogging.configuration=file:C:\TSE\wildfly-37.0.1.Final\standalone\configuration/logging.properties 
+2025-09-10 10:56:33,284 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.4.Final
+2025-09-10 10:56:35,074 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-09-10 10:56:35,100 INFO  [org.xnio] (MSC service thread 1-9) XNIO version 3.8.16.Final
+2025-09-10 10:56:35,110 INFO  [org.xnio.nio] (MSC service thread 1-9) XNIO NIO Implementation Version 3.8.16.Final
+2025-09-10 10:56:35,176 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 75) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-09-10 10:56:35,187 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-09-10 10:56:35,192 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-09-10 10:56:35,197 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-09-10 10:56:35,206 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-09-10 10:56:35,214 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-09-10 10:56:35,233 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.12.Final
+2025-09-10 10:56:35,248 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-09-10 10:56:35,265 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-09-10 10:56:35,308 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 68) WFLYNAM0001: Activating Naming Subsystem
+2025-09-10 10:56:35,314 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2025-09-10 10:56:35,386 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 77) WFLYWS0002: Activating WebServices Extension
+2025-09-10 10:56:35,465 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 10:56:35,491 INFO  [org.jboss.as.connector] (MSC service thread 1-9) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.14.Final)
+2025-09-10 10:56:35,519 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2025-09-10 10:56:35,619 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-09-10 10:56:35,726 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.3.18.Final starting
+2025-09-10 10:56:35,729 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2025-09-10 10:56:35,731 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.31.Final
+2025-09-10 10:56:35,757 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY00023: KeyStore file 'C:\TSE\wildfly-37.0.1.Final\standalone\configuration\application.keystore' does not exist. Used blank.
+2025-09-10 10:56:35,767 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-09-10 10:56:35,861 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore C:\TSE\wildfly-37.0.1.Final\standalone\configuration\application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2025-09-10 10:56:35,921 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0014: Creating file handler for path 'C:\TSE\wildfly-37.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-09-10 10:56:35,993 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2025-09-10 10:56:35,997 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) Queuing requests.
+2025-09-10 10:56:36,000 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2025-09-10 10:56:36,048 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2025-09-10 10:56:36,048 INFO  [org.jboss.as.ejb3] (MSC service thread 1-9) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2025-09-10 10:56:36,183 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2025-09-10 10:56:36,306 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2025-09-10 10:56:36,314 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-09-10 10:56:36,391 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-09-10 10:56:40,517 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory C:\TSE\wildfly-37.0.1.Final\standalone\deployments
+2025-09-10 10:56:40,637 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 7.3.3.Final (Apache CXF 4.0.9) 
+2025-09-10 10:56:44,787 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 10:56:45,683 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 8.0.2.Final
+2025-09-10 10:56:45,917 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 10:56:45,919 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 10:56:46,488 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 5.1.6 (Final)
+2025-09-10 10:56:48,082 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 96) Using OmniFaces version 4.3
+2025-09-10 10:56:48,344 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 96) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 10:56:48,947 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 96) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 10:56:49,044 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 46) WFLYSRV0010: Deployed "tse-wildfly-app.war" (runtime-name : "tse-wildfly-app.war")
+2025-09-10 10:56:49,111 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-09-10 10:56:49,119 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-09-10 10:56:49,119 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2025-09-10 10:56:49,121 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) started in 36142ms - Started 531 of 742 services (335 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2025-09-10 11:01:34,484 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 96) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\24\eede83baf5cb24e7297462c8d949d83231ee4f\content
+2025-09-10 11:01:34,494 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 99) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:01:34,561 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 71ms
+2025-09-10 11:01:34,563 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:01:34,949 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:01:34,981 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:01:34,982 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:01:35,663 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 116) Using OmniFaces version 4.3
+2025-09-10 11:01:35,702 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 116) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:01:35,930 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 116) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:01:36,017 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 96) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:01:36,022 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 96) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\71\339ab2144b6e08d3a89b13df6e643f05b4c223\content
+2025-09-10 11:01:44,411 SEVERE [jakarta.enterprise.resource.webcontainer.faces.context] (default task-2) jakarta.faces.view.facelets.FaceletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.: jakarta.faces.view.facelets.FaceletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:396)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:384)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:84)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:430)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.lambda$initCache$1(DefaultFaceletFactory.java:347)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.lambda$new$1(DefaultFaceletCache.java:61)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.lambda$get$0(ExpiringConcurrentCache.java:75)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:88)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:102)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:34)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:228)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:135)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:113)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.FaceletViewHandlingStrategy.restoreView(FaceletViewHandlingStrategy.java:232)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.MultiViewHandler.restoreView(MultiViewHandler.java:126)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.application.ViewHandlerWrapper.restoreView(ViewHandlerWrapper.java:96)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.application.ViewHandlerWrapper.restoreView(ViewHandlerWrapper.java:96)
+	at deployment.tse-wildfly-app.war//org.omnifaces.viewhandler.OmniViewHandler.restoreView(OmniViewHandler.java:128)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:164)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:98)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.2.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.SuspendedServerHandlerWrapper$1$1.handleRequest(SuspendedServerHandlerWrapper.java:50)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@3.9.1//org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+2025-09-10 11:01:55,148 SEVERE [jakarta.enterprise.resource.webcontainer.faces.context] (default task-2) jakarta.faces.view.facelets.FaceletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.: jakarta.faces.view.facelets.FaceletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:396)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:384)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:84)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:430)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.lambda$initCache$1(DefaultFaceletFactory.java:347)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.lambda$new$1(DefaultFaceletCache.java:61)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.lambda$get$0(ExpiringConcurrentCache.java:75)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:88)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:102)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:34)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:228)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:135)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:113)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.FaceletViewHandlingStrategy.restoreView(FaceletViewHandlingStrategy.java:232)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.MultiViewHandler.restoreView(MultiViewHandler.java:126)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.application.ViewHandlerWrapper.restoreView(ViewHandlerWrapper.java:96)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.application.ViewHandlerWrapper.restoreView(ViewHandlerWrapper.java:96)
+	at deployment.tse-wildfly-app.war//org.omnifaces.viewhandler.OmniViewHandler.restoreView(OmniViewHandler.java:128)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:164)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:98)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.2.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.SuspendedServerHandlerWrapper$1$1.handleRequest(SuspendedServerHandlerWrapper.java:50)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@3.9.1//org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+2025-09-10 11:01:56,119 SEVERE [jakarta.enterprise.resource.webcontainer.faces.context] (default task-2) jakarta.faces.view.facelets.FaceletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.: jakarta.faces.view.facelets.FaceletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:396)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:384)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:84)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:430)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.lambda$initCache$1(DefaultFaceletFactory.java:347)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.lambda$new$1(DefaultFaceletCache.java:61)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.lambda$get$0(ExpiringConcurrentCache.java:75)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:88)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:102)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:34)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:228)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:135)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:113)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.FaceletViewHandlingStrategy.restoreView(FaceletViewHandlingStrategy.java:232)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.MultiViewHandler.restoreView(MultiViewHandler.java:126)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.application.ViewHandlerWrapper.restoreView(ViewHandlerWrapper.java:96)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.application.ViewHandlerWrapper.restoreView(ViewHandlerWrapper.java:96)
+	at deployment.tse-wildfly-app.war//org.omnifaces.viewhandler.OmniViewHandler.restoreView(OmniViewHandler.java:128)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:164)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:98)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.2.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.SuspendedServerHandlerWrapper$1$1.handleRequest(SuspendedServerHandlerWrapper.java:50)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@3.9.1//org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+2025-09-10 11:02:04,642 ERROR [io.undertow.request] (default task-2) UT005023: Exception handling request to /tse-wildfly-app/index.xhtml: jakarta.servlet.ServletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:709)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.2.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.SuspendedServerHandlerWrapper$1$1.handleRequest(SuspendedServerHandlerWrapper.java:50)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@3.9.1//org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: jakarta.faces.view.facelets.FaceletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:396)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:384)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:84)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:430)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.lambda$initCache$1(DefaultFaceletFactory.java:347)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.lambda$new$1(DefaultFaceletCache.java:61)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.lambda$get$0(ExpiringConcurrentCache.java:75)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:88)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:102)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:34)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:228)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:135)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:113)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:194)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:98)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+	... 44 more
+
+2025-09-10 11:02:11,146 ERROR [io.undertow.request] (default task-2) UT005023: Exception handling request to /tse-wildfly-app/index.xhtml: jakarta.servlet.ServletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:709)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.2.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.SuspendedServerHandlerWrapper$1$1.handleRequest(SuspendedServerHandlerWrapper.java:50)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@3.9.1//org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: jakarta.faces.view.facelets.FaceletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:396)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:384)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:84)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:430)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.lambda$initCache$1(DefaultFaceletFactory.java:347)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.lambda$new$1(DefaultFaceletCache.java:61)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.lambda$get$0(ExpiringConcurrentCache.java:75)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:88)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:102)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:34)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:228)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:135)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:113)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:194)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:98)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+	... 44 more
+
+2025-09-10 11:02:13,037 ERROR [io.undertow.request] (default task-2) UT005023: Exception handling request to /tse-wildfly-app/index.xhtml: jakarta.servlet.ServletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:709)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.2.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.SuspendedServerHandlerWrapper$1$1.handleRequest(SuspendedServerHandlerWrapper.java:50)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@3.9.1//org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: jakarta.faces.view.facelets.FaceletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:396)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:384)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:84)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:430)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.lambda$initCache$1(DefaultFaceletFactory.java:347)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.lambda$new$1(DefaultFaceletCache.java:61)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.lambda$get$0(ExpiringConcurrentCache.java:75)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:88)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:102)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:34)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:228)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:135)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:113)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:194)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:98)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+	... 44 more
+
+2025-09-10 11:02:14,642 ERROR [io.undertow.request] (default task-2) UT005023: Exception handling request to /tse-wildfly-app/index.xhtml: jakarta.servlet.ServletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:709)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.2.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.SuspendedServerHandlerWrapper$1$1.handleRequest(SuspendedServerHandlerWrapper.java:50)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@3.9.1//org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: jakarta.faces.view.facelets.FaceletException: Error Parsing /index.xhtml: Error Traced[line: 476] The content of elements must consist of well-formed character data or markup.
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:396)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:384)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:84)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:430)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.lambda$initCache$1(DefaultFaceletFactory.java:347)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.lambda$new$1(DefaultFaceletCache.java:61)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.lambda$get$0(ExpiringConcurrentCache.java:75)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:88)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:102)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:34)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:228)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:135)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:113)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:194)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:98)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+	... 44 more
+
+2025-09-10 11:03:36,216 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 117) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\14\be1d3dc41225fe1b11e1bfb3bd5af86c111d15\content
+2025-09-10 11:03:36,220 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 118) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:03:36,264 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 44ms
+2025-09-10 11:03:36,267 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:03:36,660 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:03:36,692 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:03:36,693 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:03:37,455 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 132) Using OmniFaces version 4.3
+2025-09-10 11:03:37,490 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 132) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:03:37,687 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 132) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:03:37,744 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 117) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:03:37,748 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 117) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\24\eede83baf5cb24e7297462c8d949d83231ee4f\content
+2025-09-10 11:04:15,180 INFO  [stdout] (default task-2) DEBUG - cedula: 49823409
+2025-09-10 11:04:15,181 INFO  [stdout] (default task-2) DEBUG - nombre: german
+2025-09-10 11:04:15,181 INFO  [stdout] (default task-2) DEBUG - apellido: arodoa
+2025-09-10 11:06:33,055 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 135) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\2c\15845e44ee9d3f2c555ffc964b1e385d013896\content
+2025-09-10 11:06:33,058 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 136) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:06:33,105 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 47ms
+2025-09-10 11:06:33,107 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:06:33,483 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:06:33,510 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:06:33,511 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:06:33,977 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 150) Using OmniFaces version 4.3
+2025-09-10 11:06:34,018 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 150) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:06:34,211 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 150) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:06:34,279 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 135) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:06:34,287 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 135) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\14\be1d3dc41225fe1b11e1bfb3bd5af86c111d15\content
+2025-09-10 11:07:10,071 INFO  [stdout] (default task-2) DEBUG - cedula: 4796698
+2025-09-10 11:07:10,071 INFO  [stdout] (default task-2) DEBUG - nombre: dfgsf
+2025-09-10 11:07:10,072 INFO  [stdout] (default task-2) DEBUG - apellido: erger
+2025-09-10 11:09:29,565 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 151) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\4a\0cf49d324068874df9fa1f8fa5d1735a725866\content
+2025-09-10 11:09:29,568 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 153) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:09:29,611 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 43ms
+2025-09-10 11:09:29,613 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:09:29,952 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:09:29,975 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:09:29,976 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:09:30,637 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 153) Using OmniFaces version 4.3
+2025-09-10 11:09:30,695 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 153) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:09:30,958 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 153) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:09:31,025 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 151) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:09:31,032 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 151) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\2c\15845e44ee9d3f2c555ffc964b1e385d013896\content
+2025-09-10 11:10:09,104 INFO  [stdout] (default task-2) DEBUG - cedula: 34534
+2025-09-10 11:10:09,104 INFO  [stdout] (default task-2) DEBUG - nombre: gsdf
+2025-09-10 11:10:09,105 INFO  [stdout] (default task-2) DEBUG - apellido: sdfgsdf
+2025-09-10 11:10:09,118 ERROR [org.jboss.as.ejb3.invocation] (default task-2) WFLYEJB0034: Jakarta Enterprise Beans Invocation failed on component UsuarioBusinessBean for method public abstract void com.practico1.app.business.UsuarioBusinessLocal.agregarUsuario(com.practico1.app.entity.UsuarioServiciosSalud): jakarta.ejb.EJBException: java.lang.IllegalArgumentException: La cédula debe tener entre 7 y 8 dígitos
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:251)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:373)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:143)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.weld.core@5.1.6.Final//org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:78)
+	at org.jboss.as.weld.common@37.0.1.Final//org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:72)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:24)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:30)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.security.IdentityOutflowInterceptor.processInvocation(IdentityOutflowInterceptor.java:56)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.security.SecurityDomainInterceptor.processInvocation(SecurityDomainInterceptor.java:27)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:27)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:47)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:50)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:33)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:633)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:181)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:174)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.security.IdentityInterceptor.lambda$processInvocation$0(IdentityInterceptor.java:30)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.SecurityIdentity.runAsFunctionEx(SecurityIdentity.java:421)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsSupplierEx(Scoped.java:229)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.security.IdentityInterceptor.processInvocation(IdentityInterceptor.java:30)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:64)
+	at deployment.tse-wildfly-app.war//com.practico1.app.business.UsuarioBusinessLocal$$$view10.agregarUsuario(Unknown Source)
+	at deployment.tse-wildfly-app.war//com.practico1.app.web.UsuarioManagedBean.agregarUsuario(UsuarioManagedBean.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:186)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstValue.invoke(AstValue.java:253)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.MethodExpressionImpl.invoke(MethodExpressionImpl.java:248)
+	at org.jboss.weld.core@5.1.6.Final//org.jboss.weld.module.web.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40)
+	at org.jboss.weld.core@5.1.6.Final//org.jboss.weld.module.web.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:70)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:74)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:62)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.component.UICommand.broadcast(UICommand.java:205)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:858)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1338)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:56)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.2.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.SuspendedServerHandlerWrapper$1$1.handleRequest(SuspendedServerHandlerWrapper.java:50)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@3.9.1//org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: java.lang.IllegalArgumentException: La cédula debe tener entre 7 y 8 dígitos
+	at deployment.tse-wildfly-app.war//com.practico1.app.business.UsuarioBusinessBean.validarCedula(UsuarioBusinessBean.java:50)
+	at deployment.tse-wildfly-app.war//com.practico1.app.business.UsuarioBusinessBean.agregarUsuario(UsuarioBusinessBean.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:35)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.as.weld.common@37.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:62)
+	at org.jboss.as.weld.common@37.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:72)
+	at org.jboss.as.weld.common@37.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:85)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:46)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:26)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.jpa@37.0.1.Final//org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:30)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.wildfly.concurrency@37.0.1.Final//org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:28)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:40)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:35)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:34)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:39)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:237)
+	... 104 more
+
+2025-09-10 11:11:16,234 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 167) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\90\d38e2bce5680f1f893d6499166795fd97409a9\content
+2025-09-10 11:11:16,237 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 168) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:11:16,268 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 32ms
+2025-09-10 11:11:16,270 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:11:16,551 INFO  [org.jboss.weld.deployer] (MSC service thread 1-9) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:11:16,572 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-9) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:11:16,572 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-9) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:11:16,929 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 185) Using OmniFaces version 4.3
+2025-09-10 11:11:16,970 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 185) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:11:17,118 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 185) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:11:17,151 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 167) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:11:17,156 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 167) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\4a\0cf49d324068874df9fa1f8fa5d1735a725866\content
+2025-09-10 11:11:31,641 SEVERE [jakarta.enterprise.resource.webcontainer.faces.context] (default task-2) jakarta.faces.application.ViewExpiredException: viewId:/index.xhtml - View /index.xhtml could not be restored.: jakarta.faces.application.ViewExpiredException: viewId:/index.xhtml - View /index.xhtml could not be restored.
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:167)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:98)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.2.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.SuspendedServerHandlerWrapper$1$1.handleRequest(SuspendedServerHandlerWrapper.java:50)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@3.9.1//org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+2025-09-10 11:11:55,416 INFO  [stdout] (default task-2) DEBUG - cedula: 3247236
+2025-09-10 11:11:55,416 INFO  [stdout] (default task-2) DEBUG - nombre: sdfjshdk
+2025-09-10 11:11:55,417 INFO  [stdout] (default task-2) DEBUG - apellido: asdkjfhasd
+2025-09-10 11:13:27,344 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 188) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\c8\3b8d8fe65755ae55c318302b49950b77b74ecc\content
+2025-09-10 11:13:27,347 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 190) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:13:27,419 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 73ms
+2025-09-10 11:13:27,429 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:13:27,673 INFO  [org.jboss.weld.deployer] (MSC service thread 1-9) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:13:27,705 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-9) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:13:27,706 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-9) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:13:27,968 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 204) Using OmniFaces version 4.3
+2025-09-10 11:13:27,997 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 204) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:13:28,148 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 204) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:13:28,192 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 188) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:13:28,196 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 188) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\90\d38e2bce5680f1f893d6499166795fd97409a9\content
+2025-09-10 11:13:41,168 INFO  [stdout] (default task-2) DEBUG - usuarios.size(): 0
+2025-09-10 11:13:41,169 INFO  [stdout] (default task-2) DEBUG - usuariosFiltrados.size(): 0
+2025-09-10 11:14:02,830 INFO  [stdout] (default task-2) DEBUG - cedula: 324534
+2025-09-10 11:14:02,830 INFO  [stdout] (default task-2) DEBUG - nombre: german
+2025-09-10 11:14:02,830 INFO  [stdout] (default task-2) DEBUG - apellido: sadfasd
+2025-09-10 11:14:02,830 INFO  [stdout] (default task-2) DEBUG - usuarios.size(): 1
+2025-09-10 11:14:02,830 INFO  [stdout] (default task-2) DEBUG - usuariosFiltrados.size(): 1
+2025-09-10 11:14:02,830 INFO  [stdout] (default task-2) DEBUG - Después de agregar - usuarios.size(): 1
+2025-09-10 11:14:02,830 INFO  [stdout] (default task-2) DEBUG - Después de agregar - usuariosFiltrados.size(): 1
+2025-09-10 11:16:08,392 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 205) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\6f\3f9ba47444a88ddb2f870fc4b3887f9a2f7d45\content
+2025-09-10 11:16:08,395 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 207) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:16:08,427 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 33ms
+2025-09-10 11:16:08,429 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:16:08,700 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:16:08,724 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:16:08,724 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:16:09,032 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 206) Using OmniFaces version 4.3
+2025-09-10 11:16:09,064 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 206) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:16:09,204 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 206) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:16:09,232 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 205) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:16:09,236 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 205) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\c8\3b8d8fe65755ae55c318302b49950b77b74ecc\content
+2025-09-10 11:16:32,732 INFO  [stdout] (default task-2) DEBUG - usuarios.size(): 0
+2025-09-10 11:16:32,732 INFO  [stdout] (default task-2) DEBUG - usuariosFiltrados.size(): 0
+2025-09-10 11:16:59,621 INFO  [stdout] (default task-2) DEBUG - cedula: 3453245
+2025-09-10 11:16:59,621 INFO  [stdout] (default task-2) DEBUG - nombre: german
+2025-09-10 11:16:59,630 INFO  [stdout] (default task-2) DEBUG - apellido: sadfsad
+2025-09-10 11:16:59,630 INFO  [stdout] (default task-2) DEBUG - usuarios.size(): 1
+2025-09-10 11:16:59,630 INFO  [stdout] (default task-2) DEBUG - usuariosFiltrados.size(): 1
+2025-09-10 11:16:59,630 INFO  [stdout] (default task-2) DEBUG - Después de agregar - usuarios.size(): 1
+2025-09-10 11:16:59,630 INFO  [stdout] (default task-2) DEBUG - Después de agregar - usuariosFiltrados.size(): 1
+2025-09-10 11:18:34,439 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 206) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\54\1c78a66bf92ccd5622d0db0e611150c3cfbc56\content
+2025-09-10 11:18:34,442 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 223) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:18:34,473 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 31ms
+2025-09-10 11:18:34,475 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:18:34,734 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:18:34,758 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:18:34,759 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:18:35,137 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 238) Using OmniFaces version 4.3
+2025-09-10 11:18:35,172 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 238) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:18:35,310 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 238) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:18:35,340 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 206) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:18:35,344 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 206) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\6f\3f9ba47444a88ddb2f870fc4b3887f9a2f7d45\content
+2025-09-10 11:21:15,483 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 241) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\f8\0d62f3e40f86619f339c2b36381e7af396b69f\content
+2025-09-10 11:21:15,486 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 243) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:21:15,514 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 28ms
+2025-09-10 11:21:15,515 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:21:15,768 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:21:15,792 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:21:15,793 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:21:16,094 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 257) Using OmniFaces version 4.3
+2025-09-10 11:21:16,128 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 257) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:21:16,246 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 257) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:21:16,277 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 241) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:21:16,281 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 241) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\54\1c78a66bf92ccd5622d0db0e611150c3cfbc56\content
+2025-09-10 11:21:33,592 INFO  [stdout] (default task-2) DEBUG - usuarios.size(): 0
+2025-09-10 11:21:33,593 INFO  [stdout] (default task-2) DEBUG - usuariosFiltrados.size(): 0
+2025-09-10 11:22:05,170 INFO  [stdout] (default task-2) DEBUG - cedula: 345345
+2025-09-10 11:22:05,170 INFO  [stdout] (default task-2) DEBUG - nombre: german
+2025-09-10 11:22:05,171 INFO  [stdout] (default task-2) DEBUG - apellido: sfrasd@
+2025-09-10 11:22:05,172 ERROR [org.jboss.as.ejb3.invocation] (default task-2) WFLYEJB0034: Jakarta Enterprise Beans Invocation failed on component UsuarioBusinessBean for method public abstract void com.practico1.app.business.UsuarioBusinessLocal.agregarUsuario(com.practico1.app.entity.UsuarioServiciosSalud): jakarta.ejb.EJBException: java.lang.IllegalArgumentException: El formato del email no es válido
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:251)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:373)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:143)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.weld.core@5.1.6.Final//org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:78)
+	at org.jboss.as.weld.common@37.0.1.Final//org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:72)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:24)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:30)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.security.IdentityOutflowInterceptor.processInvocation(IdentityOutflowInterceptor.java:56)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.security.SecurityDomainInterceptor.processInvocation(SecurityDomainInterceptor.java:27)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:27)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:47)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:50)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:33)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:633)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:181)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:174)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.security.IdentityInterceptor.lambda$processInvocation$0(IdentityInterceptor.java:30)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.SecurityIdentity.runAsFunctionEx(SecurityIdentity.java:421)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsSupplierEx(Scoped.java:229)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.security.IdentityInterceptor.processInvocation(IdentityInterceptor.java:30)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:64)
+	at deployment.tse-wildfly-app.war//com.practico1.app.business.UsuarioBusinessLocal$$$view20.agregarUsuario(Unknown Source)
+	at deployment.tse-wildfly-app.war//com.practico1.app.web.UsuarioManagedBean.agregarUsuario(UsuarioManagedBean.java:89)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:186)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstValue.invoke(AstValue.java:253)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.MethodExpressionImpl.invoke(MethodExpressionImpl.java:248)
+	at org.jboss.weld.core@5.1.6.Final//org.jboss.weld.module.web.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40)
+	at org.jboss.weld.core@5.1.6.Final//org.jboss.weld.module.web.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:70)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:74)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:62)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.component.UICommand.broadcast(UICommand.java:205)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:858)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1338)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:56)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.11//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+	at jakarta.faces.impl@4.0.11//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.4.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.2.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.2.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.SuspendedServerHandlerWrapper$1$1.handleRequest(SuspendedServerHandlerWrapper.java:50)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at org.wildfly.extension.undertow@37.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1433)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@3.9.1//org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads@3.9.1//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: java.lang.IllegalArgumentException: El formato del email no es válido
+	at deployment.tse-wildfly-app.war//com.practico1.app.business.UsuarioBusinessBean.validarEmail(UsuarioBusinessBean.java:60)
+	at deployment.tse-wildfly-app.war//com.practico1.app.business.UsuarioBusinessBean.agregarUsuario(UsuarioBusinessBean.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:35)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.as.weld.common@37.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:62)
+	at org.jboss.as.weld.common@37.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:72)
+	at org.jboss.as.weld.common@37.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:85)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:46)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:26)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.jpa@37.0.1.Final//org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:30)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.wildfly.concurrency@37.0.1.Final//org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:28)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:40)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@37.0.1.Final//org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:35)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:34)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:39)
+	at org.jboss.invocation@2.0.1.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@37.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:237)
+	... 104 more
+
+2025-09-10 11:22:30,517 INFO  [stdout] (default task-2) DEBUG - cedula: 3345634
+2025-09-10 11:22:30,518 INFO  [stdout] (default task-2) DEBUG - nombre: wgedfgs
+2025-09-10 11:22:30,518 INFO  [stdout] (default task-2) DEBUG - apellido: wdfgsd
+2025-09-10 11:22:30,520 INFO  [stdout] (default task-2) DEBUG - usuarios.size(): 1
+2025-09-10 11:22:30,520 INFO  [stdout] (default task-2) DEBUG - usuariosFiltrados.size(): 1
+2025-09-10 11:22:30,521 INFO  [stdout] (default task-2) DEBUG - Después de agregar - usuarios.size(): 1
+2025-09-10 11:22:30,521 INFO  [stdout] (default task-2) DEBUG - Después de agregar - usuariosFiltrados.size(): 1
+2025-09-10 11:29:41,816 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 241) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\14\4eb4c290533a54be2cfee94c86b9f40e2fe3f3\content
+2025-09-10 11:29:41,818 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 261) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:29:41,846 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 28ms
+2025-09-10 11:29:41,847 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:29:42,073 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:29:42,090 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:29:42,091 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:29:42,344 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 275) Using OmniFaces version 4.3
+2025-09-10 11:29:42,369 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 275) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:29:42,461 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 275) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:29:42,487 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 241) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:29:42,490 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 241) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\f8\0d62f3e40f86619f339c2b36381e7af396b69f\content
+2025-09-10 11:29:52,378 INFO  [stdout] (default task-2) DEBUG - usuarios.size(): 0
+2025-09-10 11:29:52,378 INFO  [stdout] (default task-2) DEBUG - usuariosFiltrados.size(): 0
+2025-09-10 11:30:22,218 INFO  [stdout] (default task-2) DEBUG - cedula: 345340985
+2025-09-10 11:30:22,218 INFO  [stdout] (default task-2) DEBUG - nombre: german
+2025-09-10 11:30:22,219 INFO  [stdout] (default task-2) DEBUG - apellido: sadfsd
+2025-09-10 11:30:22,221 INFO  [stdout] (default task-2) DEBUG - usuarios.size(): 1
+2025-09-10 11:30:22,221 INFO  [stdout] (default task-2) DEBUG - usuariosFiltrados.size(): 1
+2025-09-10 11:30:22,222 INFO  [stdout] (default task-2) DEBUG - Después de agregar - usuarios.size(): 1
+2025-09-10 11:30:22,222 INFO  [stdout] (default task-2) DEBUG - Después de agregar - usuariosFiltrados.size(): 1
+2025-09-10 11:32:52,773 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 275) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\c4\88d788afe0d4fbb95d2eef9bca5355f06b66f1\content
+2025-09-10 11:32:52,774 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 278) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 11:32:52,804 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 30ms
+2025-09-10 11:32:52,806 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 11:32:53,183 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 11:32:53,256 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 11:32:53,256 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 11:32:53,553 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 285) Using OmniFaces version 4.3
+2025-09-10 11:32:53,581 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 285) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 11:32:53,708 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 285) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 11:32:53,734 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 275) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 11:32:53,737 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 275) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\14\4eb4c290533a54be2cfee94c86b9f40e2fe3f3\content
+2025-09-10 11:33:12,527 INFO  [stdout] (default task-2) DEBUG - usuarios.size(): 0
+2025-09-10 11:33:12,528 INFO  [stdout] (default task-2) DEBUG - usuariosFiltrados.size(): 0
+2025-09-10 11:33:35,396 INFO  [stdout] (default task-2) DEBUG - cedula: 35345
+2025-09-10 11:33:35,397 INFO  [stdout] (default task-2) DEBUG - nombre: sgdfgsdf
+2025-09-10 11:33:35,397 INFO  [stdout] (default task-2) DEBUG - apellido: asfsdf
+2025-09-10 11:33:35,399 INFO  [stdout] (default task-2) DEBUG - usuarios.size(): 1
+2025-09-10 11:33:35,399 INFO  [stdout] (default task-2) DEBUG - usuariosFiltrados.size(): 1
+2025-09-10 11:33:35,399 INFO  [stdout] (default task-2) DEBUG - Después de agregar - usuarios.size(): 1
+2025-09-10 11:33:35,400 INFO  [stdout] (default task-2) DEBUG - Después de agregar - usuariosFiltrados.size(): 1
+2025-09-10 14:40:34,474 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 292) WFLYDR0001: Content added at location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\ed\10a442cf29a9cbf703a73bfbef2ef73df537f8\content
+2025-09-10 14:40:34,500 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 293) WFLYUT0022: Unregistered web context: '/tse-wildfly-app' from server 'default-server'
+2025-09-10 14:40:34,542 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment tse-wildfly-app.war (runtime-name: tse-wildfly-app.war) in 43ms
+2025-09-10 14:40:34,544 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "tse-wildfly-app.war" (runtime-name: "tse-wildfly-app.war")
+2025-09-10 14:40:34,856 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment tse-wildfly-app.war
+2025-09-10 14:40:34,886 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioDataBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:app/tse-wildfly-app/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:module/UsuarioDataBean!com.practico1.app.data.UsuarioDataLocal
+	java:global/tse-wildfly-app/UsuarioDataBean
+	java:app/tse-wildfly-app/UsuarioDataBean
+	java:module/UsuarioDataBean
+
+2025-09-10 14:40:34,887 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'UsuarioBusinessBean' in deployment unit 'deployment "tse-wildfly-app.war"' are as follows:
+
+	java:global/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:app/tse-wildfly-app/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:module/UsuarioBusinessBean!com.practico1.app.business.UsuarioBusinessLocal
+	java:global/tse-wildfly-app/UsuarioBusinessBean
+	java:app/tse-wildfly-app/UsuarioBusinessBean
+	java:module/UsuarioBusinessBean
+
+2025-09-10 14:40:35,393 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 309) Using OmniFaces version 4.3
+2025-09-10 14:40:35,446 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 309) Initializing Mojarra 4.0.11 for context '/tse-wildfly-app'
+2025-09-10 14:40:35,762 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 309) WFLYUT0021: Registered web context: '/tse-wildfly-app' for server 'default-server'
+2025-09-10 14:40:35,834 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 292) WFLYSRV0016: Replaced deployment "tse-wildfly-app.war" with deployment "tse-wildfly-app.war"
+2025-09-10 14:40:35,841 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 292) WFLYDR0002: Content removed from location C:\TSE\wildfly-37.0.1.Final\standalone\data\content\c4\88d788afe0d4fbb95d2eef9bca5355f06b66f1\content
